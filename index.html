@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chate bot</title>
+    <link rel="stylesheet" href="css/scroll.css"/>
+    <!--Jquery import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Responsaval por interpretar as requisições-->
+    <script text="javascript" src="js/index.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/index.css"/>
+
+
+    <!-- jQuery 3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body onload="carregarContatos()">
+    <div class="faixa">
+            
+    </div>
+    <div class="backgroud">
+
+        <div class="container-chat">
+            <!-- Lista de contatos -->
+            <div class="contatos">
+                <div class="header-contatos">
+                    <div class="contato-img">
+                        <img src="icons/default_img_user_white.png"/>  
+                    </div>
+                    <p class = "User_session">Arthur Vitor</p>
+                </div>
+                <div class = "contatos-list">
+                    
+                </div>
+            </div>
+            <!-- Chat do contato -->
+            <div class="box-chat">
+                <div class = "container-chat-header">
+                    <div class="contato-img-header" id="header_chat" style="display: none;">
+                        <img id="img_user" src="icons/default_img_user_white.png"/>  
+                    </div>
+                    <div class="contato-nome-header">
+                        <h4 id="contato-username"></h4>
+                    </div>
+                </div>
+                <div class = "chat">
+                    <div class="marcador" >
+                        <div id="history_msg" class="container mb-auto">
+                            <!--Vai conter toda a conversa-->    
+                        </div>
+                    </div>
+                </div>
+                <form class = "" method="POST">
+                    <div class="input_block" id="input_block">
+                        <div class="form-row justify-content" id="barra_input" style="display: none;">
+                            <div class="col-12 col-auto sm-auto" id="input-send">
+                                <input class = "form-control" id="input" type="text" placeholder="Digite a mensagem" />
+                                <div class="row justify-content-end" id = "block_bt">
+                                    <div class="col-auto md-auto">
+                                        <button type='submit' id="bt_send" class="btn btn-primary"  onclick="createMsg()"><img src="icons/sendwhite.png"></button>
+                                    </div>
+                                </div>    
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

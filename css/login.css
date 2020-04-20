@@ -1,0 +1,41 @@
+#block_enter{
+    padding: 20px;
+    top: 100px;
+    right: 200px;
+    background: #389fda;
+    border: 1px solid lightslategray;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 9px 26px -5px rgba(0,0,0,1);
+    -moz-box-shadow: -2px 9px 26px -5px rgba(0,0,0,1);
+    box-shadow: -2px 9px 26px -5px rgba(0,0,0,1);
+}
+
+#block_enter label{
+    color: white;
+}
+
+#background{
+    height: 100%;
+}
+
+hr{
+    color: black;
+}
+
+#title_login{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+body{
+    background-image: url("C:/xampp/htdocs/TRAB7_BD2/img/azul.jpg");
+    background-repeat: unset;
+}
+
+#bt_enter{
+    position: relative;
+    right: 18px;
+}

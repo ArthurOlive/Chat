@@ -1,0 +1,30 @@
+create table usuario(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    login varchar(30) UNIQUE,
+    password varchar(30)
+);
+
+create table conversa(
+	cod_conversa int AUTO_INCREMENT PRIMARY KEY,
+	id_contato int,
+    id_usuario int,
+    FOREIGN KEY (id_contato) REFERENCES usuario(id),
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id)
+);
+
+create TABLE msg (
+    cod_msg int AUTO_INCREMENT PRIMARY KEY,
+    horario datetime DEFAULT now(),
+    mensagem text,
+    cod_conversa int,
+    FOREIGN KEY (cod_conversa) REFERENCES conversa(cod_conversa)
+
+);
+
+
+insert  into usuario(login, password) value ('Arthur', 'admin');
+insert  into usuario(login, password) value ('Valdir', '123');
+
+INSERT into conversa(id_contato, id_usuario) values (2, 1);
+
+INSERT INTO msg ( horario, mensagem, cod_conversa) VALUES (now(), 'oi', 1); 

@@ -1,0 +1,277 @@
+:root{
+    --primary: #389fda;
+}
+
+body{
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.faixa{
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    background: #3CA7E6;
+}
+
+.backgroud{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 2;
+    margin: 50px auto auto auto;
+    height: 80%;
+    width: 80%;
+    padding: 0px;
+}
+
+/* ----Contatos estilos---- */
+.contato{
+    position: relative;
+    display: grid;
+    min-height: 70px;
+    height: 60px;
+    border-bottom: 1px solid #E0E0E0;
+    grid-template-columns: 2fr 7fr 1fr;
+    grid-template-rows: 4fr ;
+    background: white;
+    cursor: pointer;
+}
+
+.active, .contato:hover{
+    background: whitesmoke;
+}
+
+
+.contato-img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+}
+
+.contato-att p{    
+    padding-bottom: 0px;
+    margin-top: 10px;
+    height: 10px ;
+}
+
+/* Lista contatos*/
+.contatos{
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    display: grid;
+    grid-template-rows: 0.9fr 9fr;
+    grid-column-start: 1;
+    background: white;
+}
+
+
+
+
+/* ------------------------ */
+.container-chat {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+.container-chat-header{
+    background: #286F99;
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    grid-template-rows: 1fr;
+    border-bottom: 2px solid gray;
+    border-left: 0.5px solid gray;
+}
+
+.contato-img-header{
+    margin: 10px auto auto auto;
+}
+
+.contato-nome-header{
+    margin-top: 20px;
+}
+
+.contato-nome-header h4{
+    color: white;
+    font-size: 20px;
+}
+
+/* -----Box chat------ */
+.box-chat{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 9fr 1fr;
+}
+
+.chat{
+    background-color: white;  
+    border-left : 1px solid whitesmoke;
+    border-right : 1px solid whitesmoke;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    position: relative;
+    overflow-y: auto;/*Implementa o scroll*/
+}
+
+.marcador{
+    min-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom:  0px;
+    left: 0px;
+}
+
+#history_msg{
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+/* -------------------- */
+
+.contato-chat{
+    width: 100%;
+    height: 100%;
+    background: gray;
+}
+
+.list_msg_user{
+    font-size: 10px;
+}
+
+.date_msg_user{
+    font-size: 8px;
+}
+
+.header-contatos{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 5px;
+    background: #286F99;
+    height: 100%;
+    min-height: 4%;
+    min-width: 40px;
+    margin-bottom: 1px;
+    border-bottom: 2px solid gray;
+}
+
+.header-contatos p{
+    font-size: 20px;
+    color : white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.header-contatos img{
+    padding: 5px;
+}
+
+#topChat{
+    height: 7%;
+    width: 100%;
+    background:  #389fda;
+}
+
+#text_msg{
+    position: relative;
+    font-size: 14px;
+    max-width: 100%;
+    color: black;
+    margin: 8px;
+}
+
+#msg{
+    position: relative;
+    background: #C5CAE9;
+    border: 1px solid gray;
+    max-width: 100%;
+    min-width: 40%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#msg_user{
+    position: relative;
+    background: #BDBDBD;
+    border: 1px solid gray;
+    max-width: 100%;
+    min-width: 40%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+span{
+    font-size: 10px;
+}
+
+#input{
+    position: relative;
+    border: 1px solid whitesmoke;
+}
+
+.input_block{
+    background: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#input-send{
+    margin-top: 5px;
+}
+
+#block_bt{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1px;
+}
+
+#bt_send{
+    width: 35px;
+    height: 35px;
+    padding: 0.5px;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+
+#bt_send img{
+    height: 15px;
+}
+
+.grid-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20fr;
+
+    background: white;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
